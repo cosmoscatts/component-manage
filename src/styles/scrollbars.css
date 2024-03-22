@@ -1,0 +1,37 @@
+:root {
+  --c-border: #fffff;
+  --c-scrollbar: rgba(0, 0, 0, .2);
+  --c-scrollbar-hover: rgba(0, 0, 0, .3);
+}
+
+html.dark {
+  --c-border: #232324;
+  --c-scrollbar: rgba(255, 255, 255, .1);
+  --c-scrollbar-hover: rgba(255, 255, 255, .2);
+}
+
+* {
+  scrollbar-color: var(--c-border);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-border);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--c-scrollbar-hover);
+}
